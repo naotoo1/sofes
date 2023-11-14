@@ -9,7 +9,7 @@ on:
 name: Windows build
 jobs:
     test-windows:
-        runs-on: windows-2019
+        runs-on: windows-latest
         steps:
             - uses: actions/checkout@v3
             - name: Install miniconda
