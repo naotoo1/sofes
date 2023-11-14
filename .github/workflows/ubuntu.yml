@@ -15,8 +15,8 @@ jobs:
             fail-fast: false
             matrix:
                 config:
-                    - { os: ubuntu-18.04, py: "3.6" }
-                    - { os: ubuntu-18.04, py: "3.7" }
+                    # - { os: ubuntu-18.04, py: "3.6" }
+                    - { os: ubuntu-19.04, py: "3.7" }
         steps:
             - name: Checkout Code
               uses: actions/checkout@v3
