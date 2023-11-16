@@ -28,8 +28,8 @@ from sklearn_lvq import (
 from sklearn.preprocessing import StandardScaler
 from sklearn.base import clone
 import matplotlib.pyplot as plt
-from mutate_labels import MutatedValidation
-from mutated_validation import (
+from .mutate_labels import MutatedValidation
+from .mutated_validation import (
     MutatedValidationScore,
     TrainRun,
     EvaluationMetricsType,
