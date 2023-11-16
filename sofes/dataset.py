@@ -55,9 +55,3 @@ class DATA:
     def breast_cancer(self) -> DATASET:
         return breast_cancer_dataset()
 
-
-if __name__ == "__main__":
-    data = DATA()
-    print(data.breast_cancer.input_data)
-    print(data.breast_cancer.labels)
-    print(data.S_1.input_data)
