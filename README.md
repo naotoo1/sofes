@@ -22,7 +22,7 @@ sofes can be installed using pip.
 pip install sofes
 ```
 
-If you have installed Sofes before and want to upgrade to the latest version, you can run the following command in your terminal:
+If you have installed sofes before and want to upgrade to the latest version, you can run the following command in your terminal:
 Prosemble can be installed using pip.
 ```python
 pip install -U sofes
