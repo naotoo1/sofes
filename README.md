@@ -6,7 +6,7 @@
 [![github](https://img.shields.io/badge/version-0.0.1-yellow.svg)](https://github.com/naotoo1/sofes)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-**A python package for prototype-based feature selection**
+**A python package for prototype-based soft feature selection**
 
 Sofes is a prototype-based soft feature selection package wrapped around the
 highly interpretable Matrix Robust Soft Learning Vector Quantization (MRSLVQ) and the Local
