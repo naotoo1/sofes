@@ -1,3 +1,5 @@
+"""sofes test prototype initializer"""
+
 import numpy as np
 from sofes import proto_initializer
 

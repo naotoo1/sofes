@@ -1,20 +1,27 @@
-import numpy as np
+"""sofes dataset test suite"""
 
+import unittest
+import numpy as np
 from sofes.dataset import DATA
 
 
-# load data
-data = DATA()
+class TestWDBC(unittest.TestCase):
+    def setUp(self):
+        self.data = DATA().breast_cancer
+        self.input_features = self.data.input_data
+        self.labels = self.data.labels
 
-def test_breast_cancer():
-    input_data =data.breast_cancer.input_data
-    labels = data.breast_cancer.labels
-    assert len(input_data)==569
-    assert len(labels)==569
-    assert len(np.unique(labels))==2
-    assert len(input_data.shape[1])==30
+    def test_size(self):
+        self.assertEqual(len(self.input_features), 569)
+        self.assertEqual(len(self.labels), 569)
 
+    def test_dimensions(self):
+        self.assertEqual(self.input_features.shape[1], 30)
 
+    def test_unique_labels(self):
+        self.assertEqual(len(np.unique(self.labels)), 2)
 
-
+    def test_dims_selection(self):
+        self.input_features = self.input_features[:, [2, 3]]
+        self.assertEqual(self.input_features.shape[1], 2)
 
