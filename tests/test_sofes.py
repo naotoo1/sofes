@@ -1,4 +1,5 @@
 """sofes test suite"""
+
 import numpy as np
 from sofes import (
     dataset,
