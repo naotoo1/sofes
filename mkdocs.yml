@@ -83,4 +83,3 @@ nav:
         - examples/intro.ipynb
     - API Reference:
           - sofes module: sofes.md
-          - common module: common.md
